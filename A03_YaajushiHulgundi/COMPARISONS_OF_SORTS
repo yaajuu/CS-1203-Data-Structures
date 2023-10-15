@@ -1,0 +1,22 @@
+INSERTION AND BUBBLE SORT
+INSERTION SORT Basically, there is an outer loop that goes through each item in the list and the inner loop goes backward from the middle position and “inserts” the element depending on where it should be. 
+Each loop at worst case takes O(N) time so total time is O(N^2). 
+
+BUBBLE SORT the worst case is when the elements are in reverse order. Outer loop is checking up to n - 1 elements and inner loop compares an element to the one next to it to swap based on sorting order. 
+Each loop at worst case takes O(N) time so total time is O(N^2). 
+
+Both insertion and bubble sort have the same theoretical time complexity and with the array i used in both the cases,
+ the sort turns out to be exactly the same. 
+
+
+MERGE SORT AND QUICK SORT
+MERGE SORT divides each array into half and then divides each half into another half and so on. 
+Therefore, the number of division stages will be log (base 2) n. For n elements, the time complexity will be O(nlogn).
+
+QUICKSORT: the worst case is when the pivot element is at the extreme ends of the array. So if the pivot is the last element, the worst case is when the array is sorted in reverse order. The height of the tree will be n and we are doing this for n elements. Therefore, the worst case has a time complexity O(n^2).
+
+COMPARING THESE WITH HEAPSORT:
+
+HEAPSORT: For a binary tree, the height of the tree is always log n. Regardless of how tall the tree is, the most number of swaps can be at the most log n 
+because that is the number of division stages. Therefore, for each element, it is log n. For n elements, it is O(nlogn).
+Heapsort is quicker than quicksort but has the same time as merge sort. 
